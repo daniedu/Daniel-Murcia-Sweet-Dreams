@@ -1,0 +1,341 @@
+﻿/* Define CSS variables */
+:root {
+  --background: rgb(239, 236, 229);
+  --background-contrast: rgb(75, 54, 33);
+  --background-contrast-hover: #756249;
+}
+
+/* Estilos Global */
+body {
+  background-color: var(--background);
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+/* Estilos Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: var(--background-contrast);
+  color: white;
+}
+
+/* Estilos Hero  */
+.hero {
+  z-index: 1;
+  position: relative;
+  height: 400px;
+  background-image: url("imagenes/hotelImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-black-cover {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+.hero-welcome {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.hero-hotel p {
+  margin: 1px 0;
+  padding: 8px;
+}
+
+.image-source {
+  font-size: 0.6rem;
+  align-items: start !important;
+}
+
+.centered-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 80px auto 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 12px;
+  width: 160px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.underline {
+  width: 30px;
+  height: 0px;
+  border: black 1px solid;
+  margin: 0 0 60px 0;
+}
+.title-content-text {
+  max-width: 600px;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+/* Content */
+.services-image {
+  height: 400px;
+  width: 100%;
+  background-image: url("imagenes/servicios.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.quienes-somos {
+  padding: 60px;
+  text-align: justify;
+  font-size: 1.3rem;
+  max-width: 40%;
+}
+.offers-image {
+  height: 400px;
+  width: 100%;
+  background-image: url("imagenes/offers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ofertas-planes {
+  padding: 60px;
+  text-align: justify;
+  font-size: 1.3rem;
+  max-width: 40%;
+}
+.habitaciones-image {
+  height: 400px;
+  width: 100%;
+  background-image: url("imagenes/habitaciones.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.habitaciones {
+  padding: 60px;
+  text-align: justify;
+  font-size: 1.3rem;
+  max-width: 40%;
+}
+.eventos-image {
+  height: 400px;
+  width: 100%;
+  background-image: url("imagenes/eventos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.eventos {
+  padding: 60px;
+  text-align: justify;
+  font-size: 1.3rem;
+  max-width: 40%;
+}
+.restaurante-image {
+  height: 400px;
+  width: 100%;
+  background-image: url("imagenes/restaurante.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.restaurante {
+  padding: 60px;
+  text-align: justify;
+  font-size: 1.3rem;
+  max-width: 40%;
+}
+.huespedes-image {
+  height: 600px;
+  width: 100%;
+  background-image: url("imagenes/huespedes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.huespedes {
+  padding: 60px;
+  text-align: justify;
+  font-size: 1.3rem;
+  max-width: 350px;
+}
+.centered-title-ending {
+  max-width: 600px;
+  text-align: center;
+  margin: 60px;
+}
+
+/* Footer */
+
+.footer {
+  width: 100% - 20px;
+  color: white;
+  padding: 20px;
+  background-color: var(--background-contrast);
+}
+.footer-text {
+  font-size: 1rem;
+}
+/* Nav Menu */
+
+.line {
+  height: 2;
+  color: white;
+  padding: 8px;
+}
+.menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.menu__item:hover {
+  background-color: var(--background-contrast-hover);
+}
+
+.fixed-topbar {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background: var(--background-contrast);
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}
+
+/* Tarjetas de eventos y ofertas */
+
+.tarjeta-precios {
+  background: var(--background);
+  border: 1px solid var(--background-contrast);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 300px;
+}
+
+/* Estilos para las tarjetas de Eventos Futuros */
+.tarjeta-evento {
+  background: var(--background);
+  border: 1px solid var(--background-contrast);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.imagen-evento {
+  width: 100%;
+}
+
+/* Estilos para las tarjetas de Ofertas */
+.tarjeta-oferta {
+  background: var(--background);
+  border: 1px solid var(--background-contrast);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+  min-width: 300px;
+}
+.tarjeta-oferta h2 {
+  margin: 0;
+}
+.contenedor-tarjetas {
+  width: 80%;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  padding: 10px;
+}
+
+/* Estilos adicionales para botones */
+.boton-saber-mas,
+.boton-ver-oferta {
+  background: var(--background-contrast-hover);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.boton-saber-mas:hover,
+.boton-ver-oferta:hover {
+  background: var(--background-contrast);
+}
+
+/* Scroll Barras Estilos  */
+.contenedor-tarjetas::-webkit-scrollbar {
+  width: 12px;
+}
+
+.contenedor-tarjetas::-webkit-scrollbar-thumb {
+  background-color: var(--background-contrast);
+  border-radius: 6px;
+}
+
+.contenedor-tarjetas::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--background-contrast);
+  border-radius: 6px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
