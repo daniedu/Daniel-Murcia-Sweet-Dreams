@@ -12,6 +12,12 @@ body {
   font-family: sans-serif;
   font-weight: 200;
 }
+
+iframe {
+  border: 0;
+  width: 100%;
+}
+
 /* Estilos Header */
 header {
   display: flex;
@@ -22,7 +28,6 @@ header {
   color: white;
 }
 
-/* Estilos Hero  */
 .hero {
   z-index: 1;
   position: relative;
