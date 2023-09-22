@@ -29,6 +29,7 @@ header {
 }
 
 .hero {
+  margin-top: 68px;
   z-index: 1;
   position: relative;
   height: 400px;
